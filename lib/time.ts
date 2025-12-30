@@ -1,7 +1,3 @@
-export function nowMs(headers: Headers): number {
-  if (process.env.TEST_MODE === "1") {
-    const h = headers.get("x-test-now-ms");
-    if (h) return Number(h);
-  }
+export function getNow(): number {
   return Date.now();
 }

@@ -1,2 +1,3 @@
-import { kv } from "@vercel/kv";
-export default kv;
+import { kv as vercelKV } from "@vercel/kv";
+
+export const kv = vercelKV;
